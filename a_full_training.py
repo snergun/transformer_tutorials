@@ -11,10 +11,7 @@ Original file is located at
 Install the Transformers, Datasets, and Evaluate libraries to run this notebook.
 """
 
-!pip install datasets evaluate transformers[sentencepiece]
-!pip install accelerate
-# To run the training on TPU, you will need to uncomment the following line:
-# !pip install cloud-tpu-client==0.10 torch==1.9.0 https://storage.googleapis.com/tpu-pytorch/wheels/torch_xla-1.9-cp37-cp37m-linux_x86_64.whl
+
 
 from datasets import load_dataset
 from transformers import AutoTokenizer, DataCollatorWithPadding
